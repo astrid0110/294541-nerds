@@ -1,135 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <title>Nerds</title>
     <meta charset="utf-8">
 </head>
 <body>
-  <header class="main-header">
-    <div class="header-top">
-      <div class="logo">
-        <img src="http://placehold.it/150x100" alt="Логотип">
-      </div>
-      <nav class="main-menu">
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="header-cart">
-        <img src="http://placehold.it/25x25" alt="корзина">
-        <a href="#">Корзина</a>
-      </div>
+<header class="main-header">
+  <div class="container">
+    <div class="logo">
+      <img src="http://placehold.it/150x100" alt="Логотип">
     </div>
-    <div class="header-title">
-      <h1>Магазин готовых шаблонов</h1>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-cart">
+      <img src="http://placehold.it/25x25" alt="корзина">
+      <a href="#">Корзина</a>
     </div>
-  </header>
-  <div class="main-container">
+  </div>
+  <div class="header-title">
+     <h1>Магазин готовых шаблонов</h1>
+  </div>
+</header>
+<div class="container">
+  <div class="filters">
+    <form class="filter" method="post">
+      <h3 class="filter-title">Стоимость</h3>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="toggle toggle-min"></div>
+        <div class="toggle toggle-max"></div>
+      </div>
+      <div class="price-control">
+        <label>
+          от
+          <input class="price" value="0" type="text">
+        </label>
+        <div class="max-price">
+          <label>
+            до
+            <input class="price" value="15000" type="text">
+          </label>
+        </div>
+      </div>
+      <h3 class="filter-title">Сетка</h3>
+      <label>
+        <input type="radio" name="layout" value="adaptive" checked>Адаптивная
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="layout" value="fixed">Фиксированная
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="layout" value="stretch">Резиновая
+      </label>
+      <h3 class="filter-title">Особенности</h3>
+      <input type ="checkbox" name="features[]" id="slider" value="slider" checked>
+      <label for="slider">Слайдер</label>
+      <br>
+      <input type ="checkbox" name="features[]" id="advantages" value="advantages">
+      <label for="advantages">Блок примуществ</label>
+      <br>
+      <input type ="checkbox" name="features[]" id="news" value="news" checked>
+      <label for="news">Новости</label>
+      <br>
+      <input type ="checkbox" name="features[]" id="gallery" value="gallery">
+      <label for="gallery">Галерея</label>
+      <br>
+      <input type ="checkbox" name="features[]" id="busket" value="busket">
+      <label for="busket">Корзина</label>
+      <input class="filter-btn" type="submit" value="Показать">
+    </form>
+  </div>
+  <div class="content-block">
+    <ul class="item-filter">
+      <li>Сортировать:</li>
+      <li><a href="#" class="active">По цене</a></li>
+      <li><a href="#">По типу</a></li>
+      <li><a href="#">По названию</a></li>
+      <li><a href="#" class="up"></a><!--стрелка вверх-->
+      <li><a href="#" class="down"></a><!--стрелка вниз-->
+    </ul>
     <div class="catalog">
-      <div class="catalog-filters">
-        <form class="catalog-filter" method="post">
-          <h2 class="filter-title">Стоимость</h2>
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
-          </div>
-          <div class="price-control">
-            <label>
-              от
-              <input class="min-price" value="0" type="text">
-            </label>
-            <div class="max-price">
-              <label>
-              до
-              <input class="max-price" value="15000" type="text">
-            </label>
-            </div>
-          </div>
-          <h2 class="filter-title">Сетка</h2>
-            <label>
-            <input type="radio" name="net" value="adaptive" checked>Адаптивная
-            </label>
-            <br>
-            <label>
-            <input type="radio" name="net" value="fixed">Фиксированная
-            </label>
-            <br>
-            <label>
-            <input type="radio" name="net" value="rubber">Резиновая
-            </label>
-          <h2 class="filter-title">Особенности</h2>
-            <input type ="checkbox" name="features[]" id="slider" checked>
-            <label for="slider">Слайдер</label>
-            <br>
-            <input type ="checkbox" name="features[]" id="advantages">
-            <label for="advantages">Блок примуществ</label>
-            <br>
-            <input type ="checkbox" name="features[]" id="news" checked>
-            <label for="news">Новости</label>
-            <br>
-            <input type ="checkbox" name="features[]" id="gallery">
-            <label for="gallery">Галерея</label>
-            <br>
-            <input type ="checkbox" name="features[]" id="busket">
-            <label for="busket">Корзина</label>
-            <input class="filter-btn" type="submit" value="Показать">
-        </form>
+      <div class="catalog-item">
+        <img src="http://placehold.it/50x50" alt="sedona">
+        <div class="pop-up">
+          <h3 class="pop-up-header">Sedona</h3>
+          <p class="pop-up-text">Информационный сайт для туристов</p>
+          <a href="#" class="pop-up-btn">9900</a>
+        </div>
       </div>
-      <div class="catalog-content">
-        <ul class="item-filter">
-          <li>Сортировать:</li>
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По названию</a></li>
-          <li><a href="#" class="up"></a><!--стрелка вверх-->
-          <li><a href="#" class="down"></a><!--стрелка вниз-->
-        </ul>
-        <article class="gallery">
-          <img src="http://placehold.it/50x50" alt="">
-          <img src="http://placehold.it/50x50" alt="">
-          <img src="http://placehold.it/50x50" alt="">
-          <img src="http://placehold.it/50x50" alt="">
-          <img src="http://placehold.it/50x50" alt="">
-          <img src="http://placehold.it/50x50" alt="">
-        </article>
+      <div class="catalog-item">
+        <img src="http://placehold.it/50x50" alt="pink">
       </div>
-      <div class="pages">
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#" class="next">Следующая</a>
+      <div class="catalog-item">
+        <img src="http://placehold.it/50x50" alt="borodinski">
       </div>
+      <div class="catalog-item">
+        <img src="http://placehold.it/50x50" alt="mishka">
+      </div>
+      <div class="catalog-item">
+        <img src="http://placehold.it/50x50" alt="book">
+      </div>
+      <div class="catalog-item">
+        <img src="http://placehold.it/50x50" alt="beer">
+      </div>
+    </div>
+    <div class="pages">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#" class="next">Следующая</a>
     </div>
   </div>
-  <div class="map">
-    <div class="contact">
-        <p><strong>NЁRDS DESIGN STUDIO</strong></p>
-        <p>191186,Санкт-Петербург,<br>ул. Б.Конюшенная,д. 19/8</p>
-        <p>тел +7(812) 275-75-75</p>
-        <a class="btn map" href="#">Напишите нам</a>
-    </div>
+</div>
+<div class="map">
+  <div class="contact">
+    <p><strong>NЁRDS DESIGN STUDIO</strong></p>
+    <p>191186,Санкт-Петербург,<br>ул. Б.Конюшенная,д. 19/8</p>
+    <p>тел +7(812) 275-75-75</p>
+    <a class="btn map" href="#">Напишите нам</a>
   </div>
-  <footer class="main footer">
-    <div class="container">
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">
-        <img src="http://placehold.it/50x50" alt=""></a>
-        <a class="social-btn social-btn-fb" href="#">
-        <img src="http://placehold.it/50x50" alt=""></a>
-        <a class="social-btn social-btn-inst" href="#">
-        <img src="http://placehold.it/50x50" alt=""></a>
-      </section>
-      <section class="footer-text">
-        <h2 class="footer-text-h2"> Давайте дружить, это выгодно</h2>
-        Скидка 10% для друзей из социальных сетей.
-      </section>
-    </div>
-  </footer>
+</div>
+<footer class="main-footer">
+  <div class="container">
+    <section class="footer-social">
+      <a class="social-btn social-btn-vk" href="#">
+      <img src="http://placehold.it/50x50" alt=""></a>
+      <a class="social-btn social-btn-fb" href="#">
+      <img src="http://placehold.it/50x50" alt=""></a>
+      <a class="social-btn social-btn-inst" href="#">
+      <img src="http://placehold.it/50x50" alt=""></a>
+    </section>
+    <section class="footer-text">
+      <h2> Давайте дружить, это выгодно</h2>
+      Скидка 10% для друзей из социальных сетей.
+    </section>
+  </div>
+</footer>
 </body>
 </html>
