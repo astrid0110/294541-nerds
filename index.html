@@ -3,58 +3,64 @@
 <head>
     <title>Nerds</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
 <header class="main-header">
-  <div class="container">
-    <div class="logo">
-      <a href="#"> <img src="./img/logo.png" width="160" height="65" alt="Логотип">
-      </a>
+  <div class="layout-center-wrapper">
+    <div class="header-top clearfix">
+      <div class="logo">
+        <a href="#"> <img src="./img/logo.png" width="160" height="65" alt="Логотип">
+        </a>
+      </div>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-cart">
+        <img src="./img/cart-icon.png" width="15" height="15" alt="корзина">
+        <a href="#">Корзина</a>
+      </div>
     </div>
-    <nav class="main-menu">
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="header-cart">
-      <img src="./img/cart-icon.png" width="15" height="15" alt="корзина">
-      <a href="#">Корзина</a>
+    <div class="slider">
+    <div class="slider-text">
+      <div class="slider-1">
+        <h1>Долго, дорого,<br>скрупулезно</h1>
+        <p>Математически выверенный дизайн<br>для вашего сайта и мобильного приложения</p>
+        <a class="slider-1 btn" href="#">Узнать больше</a>
+      </div>
     </div>
-  </div>
-  <div class="slider">
-    <div class="slider-1">
-      <h2>Долго, дорого,<br>скрупулезно</h2>
-      <p>Математически выверенный дизайн<br>для вашего сайта и мобильного приложения</p>
-      <a class="slider-1 btn" href="#">Узнать больше</a>
     </div>
   </div>
 </header>
-  <div class="container">
-    <div class="promo-1">
-      <img src="./img/illustration-1.jpg" width="300" height="146" alt="веб-сайты">
-      <p class="promo-title">Веб-сайты</p>
-      <p>Мир никогда не будет преждним после того как увидит ваш сайт</p>
-      <a class="btn promo-1" href="#">Заказать</a>
-    </div>
-    <div class="promo-2">
-      <img src="./img/illustration-2.jpg" width="300" height="146" alt="Картинка приложения">
-      <p class="promo-title">Приложения</p>
-      <p> Покорите топ-10 приложений в AppStore и Google play</p>
-      <a class="btn promo-2" href="#"> Заказать</a>
-    </div>
-    <div class="promo-3">
-      <img src="./img/illustration-3.jpg" width="300" height="146" alt="Картинка презентации">
-      <p class="promo-title">Презентации</p>
-      <p>Вы даже не подозреваеете, насколько вы изумительны!
-      </p>
-      <a class="btn promo-3" href="#">Заказать</a>
+  <div class="layout-center-wrapper">
+    <div class="promo-blocks clearfix">
+      <div class="promo promo-1">
+        <img src="./img/illustration-1.jpg" width="300" height="146" alt="веб-сайты">
+        <p class="promo-title">Веб-сайты</p>
+        <p>Мир никогда не будет преждним после того как увидит ваш сайт</p>
+        <a class="btn promo-1" href="#">Заказать</a>
+      </div>
+      <div class="promo promo-2">
+        <img src="./img/illustration-2.jpg" width="300" height="146" alt="Картинка приложения">
+        <p class="promo-title">Приложения</p>
+        <p> Покорите топ-10 приложений в AppStore и Google play</p>
+        <a class="btn promo-2" href="#"> Заказать</a>
+      </div>
+      <div class="promo promo-3">
+        <img src="./img/illustration-3.jpg" width="300" height="146" alt="Картинка презентации">
+        <p class="promo-title">Презентации</p>
+        <p>Вы даже не подозреваеете, насколько вы изумительны!
+        </p>
+        <a class="btn promo-3" href="#">Заказать</a>
+      </div>
     </div>
     <hr>
-    <div class="content">
+    <div class="content clearfix">
       <div class="content-left">
         <h1>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h1>
         <p> Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
@@ -67,15 +73,13 @@
         </ul>
       </div>
       <div class="content-right">
-        <div class="logo">
-          <img src="./img/nerds-illustration.jpg" width="360"
-          height="208" alt="Логотип">
-          <h2> С 2004 года любим точность во всем</h2>
-        </div>
+        <img src="./img/nerds-illustration.jpg" width="360"
+        height="208" alt="Логотип">
+        <h2> С 2004 года любим точность во всем</h2>
         <ul class="advantages">
-          <li><span class="percent">146<sup>%</sup></span>Уровень самоотдачи</li>
-          <li><span class="percent">100<sup>%</sup></span>Соблюдение сроков</li>
-          <li><span class="percent">50<sup>%</sup></span>Минимальная предоплата</li>
+            <li><span class="percent">146<sup>%</sup></span>Уровень самоотдачи</li>
+            <li><span class="percent">100<sup>%</sup></span>Соблюдение сроков</li>
+            <li><span class="percent">50<sup>%</sup></span>Минимальная предоплата</li>
         </ul>
       </div>
     </div>
@@ -84,27 +88,29 @@
       <img src="./img/logo-1.png" width="199" height="68" alt="">
       </a>
       <a href="#">
-      <img src="./img/logo-2.png" width="199" height="68" alt="">
+      <img src="./img/logo-2.png" width="209" height="87" alt="">
       </a>
       <a href="#">
-      <img src="./img/logo-3.png" width="199" height="68" alt="">
+      <img src="./img/logo-3.png" width="185" height="52" alt="">
       </a>
       <a href="#">
-      <img src="./img/logo-4.png" width="199" height="68" alt="">
+      <img src="./img/logo-4.png" width="173" height="84" alt="">
       </a>
     </div>
   </div>
   <div class="map">
+  <div class="layout-center-wrapper">
     <div class="contact">
       <p><strong>NЁRDS DESIGN STUDIO</strong></p>
       <p>191186,Санкт-Петербург,<br>ул. Б.Конюшенная,д. 19/8
       </p>
       <p>тел +7(812) 275-75-75</p>
       <a class="contact-btn" href="#">Напишите нам</a>
+      </div>
     </div>
   </div>
 <footer class="main-footer">
-  <div class="container">
+  <div class="layout-center-wrapper">
     <section class="footer-social">
       <a class="social-btn social-btn-vk" href="#">
       <img src="./img/vk-icon.png" width="26" height="15" alt=""></a>
