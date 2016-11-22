@@ -3,6 +3,7 @@
 <head>
     <title>Nerds</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -72,8 +73,8 @@
         <label class="feature active" for="news">Новости</label>
         <input type ="checkbox" name="features[]" id="gallery" value="gallery">
         <label class="feature" for="gallery">Галерея</label>
-        <input type ="checkbox" name="features[]" id="busket" value="busket">
-        <label class="feature" for="busket">Корзина</label>
+        <input type ="checkbox" name="features[]" id="basket" value="basket">
+        <label class="feature" for="basket">Корзина</label>
       </div>
       <input class="filter-btn" type="submit" value="Показать">
     </form>
@@ -185,5 +186,17 @@
     </section>
   </div>
 </footer>
+<div class="modal-content">
+  <button class="modal-content-close" type="button" title="Закрыть"></button>
+  <h2 class="modal-content-title">Напишите нам</h2>
+  <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+    <label class="label-name">Ваше имя:<input class="input-name" id="name-id" type="text" name="login" placeholder="Представьтесь, пожалуйста"></label>
+    <label>Ваш e-mail:<input class="input-e-mail" id="e-mail-id" type="text" name="e-mail" placeholder="Для отправки ответа"></label>
+    <label class="letter-item">Текст письма:</label>
+    <textarea placeholder="В свободной форме"></textarea>
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+</div>
+<script src="js/popup.js"></script>
 </body>
 </html>
