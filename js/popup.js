@@ -1,14 +1,13 @@
 
-  var link = document.querySelector(".contact-btn");
-  var popup = document.querySelector(".modal-content");
-  var close = popup.querySelector(".modal-content-close");
+var link = document.querySelector(".contact-btn");
+var popup = document.querySelector(".modal-content");
+var close = popup.querySelector(".modal-content-close");
 
-    link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("modal-content-show");
+link.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.add("modal-content-show");
 });
-    close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-
-      });
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("modal-content-show");
+});
